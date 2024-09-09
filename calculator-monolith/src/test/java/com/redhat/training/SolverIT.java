@@ -36,8 +36,13 @@ public class SolverIT {
     }
 
     @Test
+    public void solve_multiply() {
+        expectEquationSolution("4*2","8.0");
+    }
+
+    @Test
     public void solve_composed() {
-        expectEquationSolution("4+2-1","5.0");
+        expectEquationSolution("4+2-1*9","-3.0");
     }
 
     @Test
